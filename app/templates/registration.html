@@ -1,0 +1,183 @@
+{% extends "layout.html" %}
+{% block body %}
+<link href="../static/styles/registration.css" rel="stylesheet" type="text/css">
+<script src="scripts/registration.js"></script>
+<body>
+    <h2> Zarejstruj się wypełniając poniższy formularz:</h2>
+    <form id="registerForm" method="POST">
+        <div class="grid-container">
+
+            <div><h3>Dane osobowe:</h3></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Login:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="loginValue" type="text" name="login" placeholder="Janek123">
+            </div>
+            <div id="loginMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Imię:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="firstnameValue" type="text" name="firstName" placeholder="Jan">
+            </div>
+            <div id="firstNameMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Nazwisko:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="lastNameValue" type="text" name="lastName" placeholder="Kowalski">
+            </div>
+            <div id="lastNameMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Data urodzenia:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="birthDateValue" type="text" name="birthDate" placeholder="YYYY-MM-DD" pattern="[0-9]{4}[-]{1}[0-9]{2}[-]{1}[0-9]{2}" title="Date must have format like placeholder.">
+            </div>
+            <div id="birthDateMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Telefon:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="phoneValue" type="text" name="phone" placeholder="674432432">
+            </div>
+            <div id="phoneMsg" class="grid-item-msg-error">
+                
+            </div>
+
+
+            <div class="grid-item">
+                <label>Hasło:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="passwordValue" type="password" name="password" placeholder="hasło" 
+                pattern="(?=.*[!,@,#,$,%,^,&,*])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Musi zawierać co małą literę, dużą literę, cyfrę oraz znak specjalny np.!@#$%">
+            </div>
+            <div id="passwordMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Powtórz hasło:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="passwordRepeatValue" type="password" name="passwordRepeat" placeholder="hasło">
+            </div>
+            <div id="passwordRepeatMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div><h3>W celu późniejszej dodatkowej weryfikacji (niezbędnej do odzyskania hasła) podaj:</h3></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Pytanie zabezpieczające:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="questionValue" type="text" name="question" placeholder="Imię mojego kotka?">
+            </div>
+            <div id="questionMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Odpowiedź:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="answerValue" type="password" name="answer" placeholder="kotek">
+            </div>
+            <div id="answerMsg" class="grid-item-msg-error">
+                
+            </div>
+            <div class="grid-item">
+                <label>Odpowiedź powtórzona:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="answerRepeatValue" type="password" name="answerRepeat" placeholder="kotek">
+            </div>
+            <div id="answerRepeatMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div><h3>Adres zamieszkania:</h3></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Ulica:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="streetValue" type="text" name="street" placeholder="ul. Cynamonowa">
+            </div>
+            <div id="streetMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Numer ulicy ( i mieszkania):</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="streetNumberValue" type="text" name="streetNumber" placeholder="19/65">
+            </div>
+            <div id="streetNumberMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Kod pocztowy</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="postalCodeValue" type="text" name="postalCode" placeholder="04-345">
+            </div>
+            <div id="postalCodeMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Miejscowość:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="cityValue" type="text" name="city" placeholder="Warszawa">
+            </div>
+            <div id="cityMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Kraj:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="countryValue" type="text" name="country" placeholder="Polska">
+            </div>
+            <div id="countryMsg" class="grid-item-msg-error">
+                
+            </div>
+
+        </div>  
+        <button type="submit" id="registerButton" class="registration-button"> Zarejstruj się! </button>
+    </form>
+    
+</body>
+
+{% endblock %}

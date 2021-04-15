@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link href="../static/styles/style.css" rel="stylesheet" type="text/css">
+        <link href="../static/styles/layout.css" rel="stylesheet" type="text/css">
+        <script src="scripts/script.js"></script>
+        <title>PostYourNote</title>
+        <meta charset="utf-8">
+    </head>
+    <header>
+        <img class="logo" src="images/package.svg" alt="Logo">
+        <h1>PostYourNotes</h1>
+        <div class="header-space"></div>
+        <a class="login-btn" href="/login"><img class="login-icon" src="../static/images/login.svg"></a>
+        <a class="login-btn" href="/logout"><img class="login-icon" src="../static/images/logout.svg"></a>
+    </header>
+    <nav>
+        <ul>
+            <a href="/"><li>Strona Główna</li></a>
+            <a href="/myprofile"><li>Mój profil</li></a>
+            <a href="/notes"><li>Notatki</li></a>
+            <a href="/registration"><li>Rejestracja</li></a>
+            
+        </ul>
+    </nav>
+    <div class="space"></div>
+    <main>
+        {% block body %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p class="footer-inline left">&copy; 2020 MK</p>
+        <p class="footer-inline right">Powered by VSC</p>
+    </footer>
+</html>

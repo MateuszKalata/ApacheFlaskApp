@@ -1,0 +1,44 @@
+.downlodfile-icon{
+    width: 40px;
+}
+
+.packlist {
+    min-width: 450px;
+    list-style-type: none;
+    margin: auto;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px  black;
+}
+
+.packlist li {
+    min-width: 350px;
+    padding: 20px;
+    margin:25px;
+    background-color: #009688;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px  black;
+}
+
+.packlistitems{
+    min-width:35%;
+    font-size: 20px;
+    margin: 0px 20px;
+    padding: 5px;
+    display:inline-block;
+}
+
+.downlodfilep{
+    font-size: 20px;
+    margin: 0px 20px;
+    padding: 5px;
+    display:inline-block;
+    min-width: 5%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.downlodfilep:hover{
+    background-color: lightgray;
+}

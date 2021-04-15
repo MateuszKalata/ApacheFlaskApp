@@ -1,0 +1,96 @@
+h2{
+    padding-left: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    color: whitesmoke;
+    text-shadow: 2px 1px black;
+}
+
+h3{
+  padding-left: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+
+.grid-container {
+    width: 90%;
+    color:black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px  black;
+  }
+
+.grid-item {
+    padding: 20px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+.grid-item-input {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .grid-item-input input {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #009688;
+  }
+  .grid-item-input input:hover{
+    background-color: whitesmoke;
+  }
+  .grid-item-msg-error {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(203, 45, 45);
+    text-align: left;
+
+  }
+  .grid-item-msg-success {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(39, 126, 47);
+    text-align: left;
+  }
+  .succes-field{
+    width: 30px;
+  }
+  .registration-button{
+    font-size:20px;
+    font-weight:bold;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 70%;
+    background-color: whitesmoke;
+  }
+ 
+  .registration-button:hover{
+      background-color: lightgrey;
+   }
+
+   .common-button{
+    font-size:16px;
+    font-weight:bold;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 20%;
+    background-color: whitesmoke;
+  }
+ 
+  .common-button:hover{
+      background-color: lightgrey;
+   }
+

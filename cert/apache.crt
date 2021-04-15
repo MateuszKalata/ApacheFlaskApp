@@ -1,0 +1,70 @@
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 3 (0x3)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=PL, ST=Poland, L=Warszawa, O=NASK, OU=NASK, CN=NASK/emailAddress=NASK
+        Validity
+            Not Before: Jan 10 00:11:14 2021 GMT
+            Not After : Jan 10 00:11:14 2022 GMT
+        Subject: C=PL, ST=Mazowieckie, L=Warszawa, O=PW, OU=Politechnika, CN=localhost/emailAddress=@
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b7:d8:98:a1:2d:1a:a1:08:88:9c:4e:c9:06:d2:
+                    87:9e:f7:5e:16:c9:8d:bc:c9:ad:e0:e6:7b:b3:8e:
+                    23:48:a8:98:b0:45:01:dc:15:82:df:a0:ec:c4:51:
+                    6b:71:ea:07:09:eb:ec:b0:e8:b2:0c:4d:90:97:5d:
+                    8f:b6:4f:b7:75:ac:6a:a1:2e:b0:5a:47:a2:3e:44:
+                    2f:02:c0:5b:1f:c9:56:6c:5f:58:f3:c4:ce:71:f3:
+                    37:65:08:94:cd:bc:25:a3:85:aa:42:cc:8a:ae:9b:
+                    5e:8f:7b:e5:80:88:c5:c8:ee:e3:0e:7f:f0:03:b8:
+                    a3:f5:47:a3:bf:a1:81:2a:a8:84:d7:4f:d1:58:0a:
+                    2b:1a:b2:74:c3:31:08:29:65:33:31:9c:03:f7:ed:
+                    16:66:75:16:09:d5:66:52:7d:27:13:ad:e8:26:43:
+                    35:3f:5b:be:5c:64:ca:71:b8:53:e5:1a:00:e7:ed:
+                    00:08:8f:f5:0b:f2:71:6f:1d:43:7c:25:6d:e5:56:
+                    80:1f:a0:cd:01:a7:c0:ef:36:87:4f:26:0c:d6:34:
+                    48:f6:b7:64:93:96:09:e5:ac:5f:7f:46:a4:64:5d:
+                    6d:75:52:27:c2:fa:8c:3a:ab:50:e0:b5:6f:6f:c8:
+                    86:ab:3d:e3:2d:f7:33:c8:b4:6c:d1:9a:e0:a1:82:
+                    48:d3
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+         1c:21:53:fc:de:0b:c6:4c:9a:09:4d:7c:ae:da:05:5b:74:7f:
+         b6:ed:e1:0a:90:39:c3:eb:f3:ce:43:e0:b4:28:92:ac:f6:08:
+         c2:a9:f4:ac:f0:cb:ae:d9:8a:d5:60:d4:ce:20:de:11:92:77:
+         8e:fc:5e:83:c1:69:6d:8d:77:02:b6:a8:c9:04:64:5d:83:a7:
+         00:3e:77:73:92:e2:90:72:2a:1d:12:03:73:b5:2e:52:4c:be:
+         89:5b:03:b5:28:52:1f:b3:a4:43:1f:7f:3d:83:20:a7:c0:62:
+         63:31:e7:74:c4:66:9c:40:8d:5b:4a:b4:b4:54:4d:a2:2b:dd:
+         1f:6e:00:f9:bc:9f:5d:38:2c:6b:56:2c:f7:a4:ff:5b:8e:d3:
+         08:31:a1:28:9a:a9:e1:84:e8:44:e5:54:55:18:92:98:b1:7a:
+         dd:c2:89:45:6a:4a:bc:09:db:97:72:9c:c5:ef:fc:84:a1:9c:
+         fe:c8:25:13:73:34:5a:29:c7:d9:fc:75:9b:78:87:6d:d9:ff:
+         cf:33:f7:22:77:bd:91:32:3c:13:df:90:91:72:fa:a4:26:79:
+         88:04:e9:ed:fb:52:6c:fd:a6:1e:5c:91:71:88:37:b7:7d:45:
+         80:10:dd:70:d9:f4:cc:f9:75:b8:3b:0f:fe:ea:b1:17:b4:7a:
+         34:f5:3d:1a
+-----BEGIN CERTIFICATE-----
+MIIDaDCCAlACAQMwDQYJKoZIhvcNAQELBQAwczELMAkGA1UEBhMCUEwxDzANBgNV
+BAgMBlBvbGFuZDERMA8GA1UEBwwIV2Fyc3phd2ExDTALBgNVBAoMBE5BU0sxDTAL
+BgNVBAsMBE5BU0sxDTALBgNVBAMMBE5BU0sxEzARBgkqhkiG9w0BCQEWBE5BU0sw
+HhcNMjEwMTEwMDAxMTE0WhcNMjIwMTEwMDAxMTE0WjCBgDELMAkGA1UEBhMCUEwx
+FDASBgNVBAgMC01hem93aWVja2llMREwDwYDVQQHDAhXYXJzemF3YTELMAkGA1UE
+CgwCUFcxFTATBgNVBAsMDFBvbGl0ZWNobmlrYTESMBAGA1UEAwwJbG9jYWxob3N0
+MRAwDgYJKoZIhvcNAQkBFgFAMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAt9iYoS0aoQiInE7JBtKHnvdeFsmNvMmt4OZ7s44jSKiYsEUB3BWC36DsxFFr
+ceoHCevssOiyDE2Ql12Ptk+3daxqoS6wWkeiPkQvAsBbH8lWbF9Y88TOcfM3ZQiU
+zbwlo4WqQsyKrptej3vlgIjFyO7jDn/wA7ij9Uejv6GBKqiE10/RWAorGrJ0wzEI
+KWUzMZwD9+0WZnUWCdVmUn0nE63oJkM1P1u+XGTKcbhT5RoA5+0ACI/1C/Jxbx1D
+fCVt5VaAH6DNAafA7zaHTyYM1jRI9rdkk5YJ5axff0akZF1tdVInwvqMOqtQ4LVv
+b8iGqz3jLfczyLRs0ZrgoYJI0wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAcIVP8
+3gvGTJoJTXyu2gVbdH+27eEKkDnD6/POQ+C0KJKs9gjCqfSs8Muu2YrVYNTOIN4R
+kneO/F6DwWltjXcCtqjJBGRdg6cAPndzkuKQciodEgNztS5STL6JWwO1KFIfs6RD
+H389gyCnwGJjMed0xGacQI1bSrS0VE2iK90fbgD5vJ9dOCxrViz3pP9bjtMIMaEo
+mqnhhOhE5VRVGJKYsXrdwolFakq8CduXcpzF7/yEoZz+yCUTczRaKcfZ/HWbeIdt
+2f/PM/cid72RMjwT35CRcvqkJnmIBOnt+1Js/aYeXJFxiDe3fUWAEN1w2fTM+XW4
+Ow/+6rEXtHo09T0a
+-----END CERTIFICATE-----

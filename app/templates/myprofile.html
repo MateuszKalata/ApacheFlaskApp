@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+{% block body %}
+<link href="../static/styles/registration.css" rel="stylesheet" type="text/css">
+<script src="scripts/registration.js"></script>
+<body>
+    <h2>Mój profil:</h2>
+    <form method="POST">
+        <button class="common-button" type="submit"> Edytuj profil! </button>
+    </form>
+    
+    <form id="registerForm" method="POST" action="https://localhost:8080/changeprofile">
+        <div class="grid-container">
+
+            <div><h3>Dane osobowe:</h3></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Login:</label>
+            </div>
+            <div class="grid-item-input">
+                <label id="loginValue">{{user['login']}}</label>
+            </div>
+            <div id="loginMsg" class="grid-item-input">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Imię:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['fname']}}</label>
+            </div>
+            <div id="firstNameMsg" class="grid-item-input">
+                <input id="firstnameValue" type="text" value="{{user['fname']}}" name="firstName" placeholder="Jan" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Nazwisko:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['lname']}}</label>
+            </div>
+            <div id="lastNameMsg" class="grid-item-input">
+                <input id="lastNameValue" type="text" value="{{user['lname']}}" name="lastName" placeholder="Kowalski" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Data urodzenia:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['bithDate']}}</label>
+            </div>
+            <div id="birthDateMsg" class="grid-item-input">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Telefon:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['phone']}}</label>
+            </div>
+            <div id="phoneMsg" class="grid-item-input">
+                <input id="phoneValue" type="text" value="{{user['phone']}}" name="phone" placeholder="674432432" {{edit}}> 
+            </div>
+
+
+            
+
+            <div><h3>Adres zamieszkania:</h3></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Ulica:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['address']['street']}}</label>
+            </div>
+            <div id="streetMsg" class="grid-item-input">
+                <input id="streetValue" type="text" value="{{user['address']['street']}}" name="street" placeholder="ul. Cynamonowa" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Numer ulicy ( i mieszkania):</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['address']['number']}}</label>
+            </div>
+            <div id="streetNumberMsg" class="grid-item-input">
+                <input id="streetNumberValue" type="text" value="{{user['address']['number']}}" name="streetNumber" placeholder="19/65" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Kod pocztowy</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['address']['postalCode']}}</label>
+            </div>
+            <div id="postalCodeMsg" class="grid-item-input">
+                <input id="postalCodeValue" type="text" value="{{user['address']['postalCode']}}" name="postalCode" placeholder="04-345" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Miejscowość:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['address']['city']}}</label>
+            </div>
+            <div id="cityMsg" class="grid-item-input">
+                <input id="cityValue" type="text" value="{{user['address']['city']}}"  name="city" placeholder="Warszawa" {{edit}}>
+            </div>
+
+            <div class="grid-item">
+                <label>Kraj:</label>
+            </div>
+            <div class="grid-item-input">
+                <label>{{user['address']['country']}}</label>
+            </div>
+            <div id="countryMsg" class="grid-item-input">
+                <input id="countryValue" type="text" value="{{user['address']['country']}}" name="country" placeholder="Polska" {{edit}}> 
+            </div>
+
+          </div>  
+        <button type="submit" id="registerButton"  class="registration-button" {{edit}}> Zapisz zmiany! </button>
+    </form>
+
+
+    <h2> Zdefiniuj nowe hasło:</h2>
+
+    <form id="registerForm" method="POST" action="https://localhost:8080/changepasswd">
+        <div class="grid-container">
+
+            <div class="grid-item">
+                <label>Hasło:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="passwordValue" type="password" name="oldpassword" placeholder="hasło">
+            </div>
+            <div id="passwordMsg" class="grid-item-input">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Nowe hasło:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="newPasswordValue" type="password" name="password" placeholder="hasło" 
+                title="Musi zawierać co małą literę, dużą literę, cyfrę oraz znak specjalny np.!@#$%">
+            </div>
+            <div id="newPasswordMsg" class="grid-item-input">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Powtórz nowe hasło:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="passwordRepeatValue" type="password" name="passwordRepeat" placeholder="hasło">
+            </div>
+            <div id="passwordRepeatMsg" class="grid-item-input">
+                
+            </div>
+
+        </div>  
+
+        <button type="submit" id="registerButton" class="registration-button"> Zmień Hasło! </button>
+    </form>
+    
+</body>
+
+{% endblock %}

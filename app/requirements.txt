@@ -1,0 +1,5 @@
+Flask
+redis
+pyopenssl
+requests
+bcrypt

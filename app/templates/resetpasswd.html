@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block body %}
+<link href="../static/styles/registration.css" rel="stylesheet" type="text/css">
+<body>
+    <h2> Zrestartuj hasło:</h2>
+    <form id="loginForm" method="POST" action="https://localhost:8080/resetpasswd">
+        <div class="grid-container">
+
+            <div class="grid-item">
+                <label>Login:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="loginValue" type="text" name="username">
+            </div>
+            <div id="loginMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div class="grid-item">
+                <label>Numer telefonu:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="loginValue" type="text" name="phone">
+            </div>
+            <div id="loginMsg" class="grid-item-msg-error">
+                
+            </div>
+
+            <div><h2>{{question}}</h2></div>
+            <div class="grid-item">             
+            </div>
+            <div></div>
+
+            <div class="grid-item">
+                <label>Odpowiedź:</label>
+            </div>
+            <div class="grid-item-input">
+                <input id="answerValue" type="password" name="answer">
+            </div>
+            <div id="answerMsg" class="grid-item-msg-error">
+                
+            </div>
+           
+          </div>
+          <button class="registration-button" type="submit">Zreseruj hasło!</button>
+    </form>
+</body>
+
+{% endblock %}
